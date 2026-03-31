@@ -1,4 +1,6 @@
 fastapi
+fastapi[standard]
+uvicorn
 uvicorn[standard]
 pydantic
 email-validator
