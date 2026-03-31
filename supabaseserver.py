@@ -7,20 +7,20 @@ from typing import Any
 import dotenv
 from supabase import Client, create_client
 
-ENV = dotenv.dotenv_values(".env")
-SUPABASE_URL = ENV.get("SUPABASE_URL") or ""
-SUPABASE_PUBLISHABLE_KEY = (
-    ENV.get("SUPABASE_PUBLISHABLE_KEY")
-    or ENV.get("SUPABASE_ANON_KEY")
-    or ENV.get("SUPABASE_KEY")
-    or ""
-)
-SUPABASE_SECRET_KEY = (
-    ENV.get("SUPABASE_SECRET_KEY")
-    or ENV.get("SUPABASE_SERVICE_ROLE_KEY")
-    or ENV.get("SUPABASE_KEY")
-    or ""
-)
+#ENV = dotenv.dotenv_values(".env")
+SUPABASE_URL = https://egsgrqgzdmevupuchwbr.supabase.co# ENV.get("SUPABASE_URL") or ""
+# SUPABASE_PUBLISHABLE_KEY = (
+#     ENV.get("SUPABASE_PUBLISHABLE_KEY")
+#     or ENV.get("SUPABASE_ANON_KEY")
+#     or ENV.get("SUPABASE_KEY")
+#     or ""
+# )
+SUPABASE_SECRET_KEY =sb_secret_Ya1yzrG3TkXiWOXp6hPDrQ_yYEIWHI4 #(
+#     ENV.get("SUPABASE_SECRET_KEY")
+#     or ENV.get("SUPABASE_SERVICE_ROLE_KEY")
+#     or ENV.get("SUPABASE_KEY")
+#     or ""
+# )
 
 PLAN_LIMITS = {
     "starter": 10,
