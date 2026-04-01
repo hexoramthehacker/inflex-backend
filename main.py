@@ -19,7 +19,7 @@ from yt import YOUTUBE_SEARCH
 
 app = FastAPI(title="Inflex API", version="1.2.0")
 origins = [
-    "https://inflex-frontend-eijmsbzop-hexoramthehackers-projects.vercel.app/",
+    "https://inflex-frontend-eijmsbzop-hexoramthehackers-projects.vercel.app",
     "https://www.yourcustomdomain.com",
 ]
 
