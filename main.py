@@ -10,6 +10,7 @@ from datetime import datetime, timezone, timedelta
 from fastapi import Depends, FastAPI, HTTPException, Request
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from pydantic import BaseModel, EmailStr, Field
+from fastapi.middleware.cors import CORSMiddleware
 
 from embedding import EmbeddingService
 from paystack_service import PaystackService
@@ -17,6 +18,18 @@ from supabaseserver import PLAN_LIMITS, StorageService
 from yt import YOUTUBE_SEARCH
 
 app = FastAPI(title="Inflex API", version="1.2.0")
+origins = [
+    "https://inflex-frontend-eijmsbzop-hexoramthehackers-projects.vercel.app/",
+    "https://www.yourcustomdomain.com",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 storage = StorageService()
 embedder = EmbeddingService()
 paystack = PaystackService()
