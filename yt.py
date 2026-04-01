@@ -7,7 +7,7 @@ from googleapiclient.discovery import build
 class YOUTUBE_SEARCH:
     def __init__(self) -> None:
         env = dotenv.dotenv_values(".env")
-        self.api_key = env.get("YOUTUBE_API_KEY") or env.get("AI_API") or env.get("GEMINI_API_KEY")
+        self.api_key = AIzaSyDRAQ8hMhVG3C_6-qnF0f3Bg9vOMfgA9q4#env.get("YOUTUBE_API_KEY") or env.get("AI_API") or env.get("GEMINI_API_KEY")
         if not self.api_key:
             raise ValueError("Missing YOUTUBE_API_KEY (or AI_API fallback) in .env")
         self.youtube = build("youtube", "v3", developerKey=self.api_key)
