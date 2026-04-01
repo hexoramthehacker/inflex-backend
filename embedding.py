@@ -8,9 +8,9 @@ import google.generativeai as genai
 import numpy as np
 
 ENV = dotenv.dotenv_values(".env")
-REWRITE_MODEL = AIzaSyDRAQ8hMhVG3C_6-qnF0f3Bg9vOMfgA9q4#ENV.get("REWRITE_MODEL", "gemini-2.0-flash")
-EMBEDDING_MODEL = AIzaSyDRAQ8hMhVG3C_6-qnF0f3Bg9vOMfgA9q4#ENV.get("EMBEDDING_MODEL", "models/gemini-embedding-2-preview")
-GEMINI_API_KEY =AIzaSyDRAQ8hMhVG3C_6-qnF0f3Bg9vOMfgA9q4 #ENV.get("GEMINI_API_KEY") or ENV.get("GEMINI_API") or ENV.get("AI_API")
+REWRITE_MODEL = "AIzaSyDRAQ8hMhVG3C_6-qnF0f3Bg9vOMfgA9q4"#ENV.get("REWRITE_MODEL", "gemini-2.0-flash")
+EMBEDDING_MODEL = "AIzaSyDRAQ8hMhVG3C_6-qnF0f3Bg9vOMfgA9q4"#ENV.get("EMBEDDING_MODEL", "models/gemini-embedding-2-preview")
+GEMINI_API_KEY ="AIzaSyDRAQ8hMhVG3C_6-qnF0f3Bg9vOMfgA9q4" #ENV.get("GEMINI_API_KEY") or ENV.get("GEMINI_API") or ENV.get("AI_API")
 
 if not GEMINI_API_KEY:
     raise ValueError("Missing GEMINI_API_KEY (or GEMINI_API / AI_API) in .env")
