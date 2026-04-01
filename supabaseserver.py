@@ -9,7 +9,7 @@ from supabase import Client, create_client
 
 #ENV = dotenv.dotenv_values(".env")
 SUPABASE_URL = "https://egsgrqgzdmevupuchwbr.supabase.co"# ENV.get("SUPABASE_URL") or ""
-# SUPABASE_PUBLISHABLE_KEY = (
+SUPABASE_PUBLISHABLE_KEY = "sb_publishable_olyqI4QyhIqrVqS3bD1wPA_CScgz7pm"#(
 #     ENV.get("SUPABASE_PUBLISHABLE_KEY")
 #     or ENV.get("SUPABASE_ANON_KEY")
 #     or ENV.get("SUPABASE_KEY")
